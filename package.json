@@ -1,0 +1,18 @@
+{
+  "name": "testcase-ai-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node server/index.js",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  }
+}
